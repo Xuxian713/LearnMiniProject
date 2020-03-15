@@ -1,3 +1,12 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello Bob</text>
-<button size="mini">按钮</button>
+<!--小程序的数据绑定 {{}}-->
+<view>{{name}}</view>
+<view>{{age+'我是一个傻子'}}</view>
+
+<!--列表展示-->
+<view wx:for="{{pro}}">{{item.id}}</view>
+
+<!--时间监听-->
+<view>当前技术:{{counter}}</view>
+<button size="mini" bindtap="onClickReduce">减少-1</button>
+<button size="mini" bindtap="onClickAdd">点击+1</button>
