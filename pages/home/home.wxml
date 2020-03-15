@@ -1,3 +1,6 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello Bob</text>
 <button size="mini">按钮</button>
+
+<view>知识点2</view>
+<view>买房子困难啊!</view>
