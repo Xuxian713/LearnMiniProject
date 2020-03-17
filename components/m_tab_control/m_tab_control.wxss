@@ -1,0 +1,21 @@
+/* components/m_tab_control/m_tab_control.wxss */
+.goodContiner{
+  display: flex;
+  /* background:#9d20cb; */
+  color:#555;
+  white-space: nowrap;
+  padding-bottom: 10rpx;
+  justify-content: space-around;
+  background: #fff;
+}
+.goodItem{
+  display: inline-block;
+  height:50rpx;
+  /* width: 140rpx; */
+  text-align: center;
+}
+.active{
+  color:#9d20cb;
+  border-bottom: 6rpx solid #9d20cb;
+  text-align: center
+}

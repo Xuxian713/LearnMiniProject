@@ -1,0 +1,42 @@
+/* pages/home/components/goods_item/goods_item.wxss */
+.item{
+  text-align: center;
+  color: #333;
+  padding-bottom: 85rpx;
+  justify-content: space-evenly;
+}
+.image{
+  width:100%;
+  border-radius: 10rpx;
+}
+.desc-info{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0rpx;
+}
+.title{
+  white-space: nowrap;
+}
+.cfav{
+  position: relative;
+}
+.price{
+  margin-top:10rpx;
+  color: #ff5777;
+}
+.icon{
+  width: 30rpx;
+  height:30rpx;
+  padding: 0 6rpx 0 10rpx;
+  top:4rpx;
+}
+/* .cfav::before{
+  content:'';
+  position: absolute;
+  left:-15rpx;
+  top:-1rpx;
+  width:14rpx;
+  height: 14rpx;
+  background: url("/assets/common/WechatIMG237.png")
+} */

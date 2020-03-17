@@ -1,0 +1,20 @@
+/* pages/home/components/recommend/recommend.wxss */
+.recommend{
+  display: flex;
+  margin-top: 40rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 8rpx solid #eee;
+}
+.recommend_item{
+    flex: 1;
+    text-align: center
+}
+.recommend_item image{
+  width:160rpx;
+  height:160rpx;
+  border-radius: 80rpx;
+}
+.recommend_item view{
+  font-size: 30rpx;
+  color:#555;
+}

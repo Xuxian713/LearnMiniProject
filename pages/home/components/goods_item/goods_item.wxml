@@ -1,0 +1,14 @@
+<!--pages/home/components/goods_item/goods_item.wxml-->
+<view class="item">
+  <image src="{{item.url}}" class="image"/>
+  <view class="desc-info">
+    <view class="info">
+      <text class="price">
+        ¥50.00
+      </text>
+      <image src="/assets/common/WechatIMG237.png" class="icon"/>
+      <text class="cfav">
+      </text>
+    </view>
+  </view>
+</view>

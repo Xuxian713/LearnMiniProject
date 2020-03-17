@@ -1,3 +1,13 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "m-swiper":"/components/m_swiper/m_swiper",
+    "m-recommend":"./components/recommend/recommend",
+    "m-tab-control":"/components/m_tab_control/m_tab_control",
+    "m-goods-item":"./components/goods_item/goods_item"
+  },
+  "navigationBarTitleText": "首页",
+  "navigationBarBackgroundColor": "#9d20cb",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance":50
 }

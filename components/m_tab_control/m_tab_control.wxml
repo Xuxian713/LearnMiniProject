@@ -1,0 +1,12 @@
+<!--components/m_tab_control/m_tab_control.wxml-->
+<view class="goodContiner">
+   <view wx:for="{{goods}}" 
+      class='goodItem {{currentIndex == index ? "active" : " "}}'
+      wx:key="index"
+      wx:for-item="outItem"
+      data-index="{{index}}"
+      bindtap="onClickItem"
+      >
+      <text>{{outItem.class}}</text>
+    </view>
+</view>

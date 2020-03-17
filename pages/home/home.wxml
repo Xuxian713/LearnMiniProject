@@ -1,12 +1,19 @@
 <!--pages/home/home.wxml-->
-<!--小程序的数据绑定 {{}}-->
-<view>{{name}}</view>
-<view>{{age+'我是一个傻子'}}</view>
+<m-swiper list="{{bannersList}}"/>
 
-<!--列表展示-->
-<view wx:for="{{pro}}">{{item.id}}</view>
+<m-recommend recommondList="{{recommondList}}" bind:imageLoad="imageLoadFinsh"/>
 
-<!--时间监听-->
-<view>当前技术:{{counter}}</view>
-<button size="mini" bindtap="onClickReduce">减少-1</button>
-<button size="mini" bindtap="onClickAdd">点击+1</button>
+<view class="popular">
+  <view class="popular_title">本周流行</view>
+  <image src="/assets/home/popular/WechatIMG224.png"/>
+</view>
+
+<m-tab-control goods="{{goods}}" bind:tabClick="onHandleTabClick" class="{{isTabFiexd ? 'fixed' : ''}}" id="tab-conrol"/>
+<m-tab-control goods="{{goods}}" wx:if="{{isTabFiexd}}"/>
+
+<view class="list">
+  <block wx:for="{{selectList}}" wx:key="index">
+    <!-- <image src="{{item.url}}"/> -->
+    <m-goods-item item="{{item}}"class="list_item"/>
+  </block>
+</view>

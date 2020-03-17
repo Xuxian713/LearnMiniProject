@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "m_back-top":"/components/m_back_top/m_back_top"
+  },
+  "navigationBarTitleText":"分类",
+  "navigationBarBackgroundColor": "#9d20cb",
+  "backgroundColor": "#9d20cb",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance":300
+}

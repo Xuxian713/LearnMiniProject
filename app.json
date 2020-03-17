@@ -1,6 +1,52 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/about/about",
+    "pages/classify/classify",
+    "pages/experist/experist"
+  ],
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "你好! 美食",
+    "backgroundColor": "#ff5777",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "assets/tabbar/clssify.png",
+        "selectedIconPath": "assets/tabbar/clssify_active.png"
+      },
+      {
+        "pagePath": "pages/experist/experist",
+        "text": "体验",
+        "iconPath": "assets/tabbar/experist.png",
+        "selectedIconPath": "assets/tabbar/experist_active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "assets/tabbar/mine.png",
+        "selectedIconPath": "assets/tabbar/mine_active.png"
+      }
+    ],
+    "backgroundColor": "#efeeee",
+    "color": "#000000",
+    "selectedColor": "#980ebb"
+  }
 }

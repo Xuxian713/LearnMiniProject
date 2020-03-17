@@ -1,0 +1,65 @@
+/* pages/classify/classify.wxss */
+.goodContiner{
+  display: flex;
+  /* background:#9d20cb; */
+  color:aliceblue;
+  white-space: nowrap;
+  padding-bottom: 10rpx;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1;
+}
+.goodItem{
+  display: inline-block;
+  height:50rpx;
+  width: 140rpx;
+  text-align: center;
+}
+.active{
+  color:red;
+  border-bottom: 6rpx solid #9d20cb;
+  text-align: center
+}
+.recommend_title{
+  color:blueviolet;
+  font-size:26rpx;
+  padding: 10rpx 20rpx;
+}
+.recommend{
+  display: flex;
+  margin-top:20rpx;
+  border-bottom: 30rpx solid #eee;
+  padding-bottom: 30rpx;
+  white-space: nowrap;
+}
+.recommend_item{
+  flex: 1;
+  text-align: center;
+  display: inline-block;
+}
+.recommend_item image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 100rpx;
+}
+.recommend_item view{
+  color: rgb(18, 20, 20);
+}
+.list_detailDec{
+  font-size: 30rpx;
+  padding: 15rpx 30rpx;
+}
+.list_item {
+  position: relative;
+  width: 100%;
+}
+.list_detai_btn{
+  padding: 10rpx 10rpx;
+  position: absolute;
+  right: 50rpx;
+  bottom: 100rpx;
+  background-color: red;
+  color:#ffffff
+}

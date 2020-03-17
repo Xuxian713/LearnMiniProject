@@ -1,0 +1,56 @@
+<!--pages/classify/classify.wxml-->
+<scroll-view scroll-x class="goodContiner">
+   <view wx:for="{{goods}}" 
+      class='goodItem {{currentIndex == index ? "active" : " "}}'
+      wx:key="index"
+      wx:for-item="outItem"
+      data-index="{{index}}"
+      bindtap="onClickItem"
+      >
+      <text>{{outItem.class}}</text>
+    </view>
+</scroll-view>
+<!--轮播图-->
+<swiper class="swiper" 
+  circula 
+  autoplay 
+  interval="3000" 
+  duration="300" 
+  indicator-dots
+  indicator-active-color="#ff5777"
+  style="height:400rpx">
+  <block wx:for="{{branerList}}" wx:key="index">
+    <swiper-item class="swiper-item">
+      <image src="{{item.url}}" mode="widthFix" style="width:100%"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 推荐数据的展示-->
+<text class="recommend_title">本周精选</text>
+<scroll-view scroll-x>
+  <view style="margin-top:20rpx;">
+    <view class="recommend"> 
+      <block wx:for="{{recommends}}" wx:key="index">
+        <view class="recommend_item">
+          <image src="{{item.url}}"/>
+          <view>{{item.title}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</scroll-view>
+<!--列表页删选数据-->
+<text class="recommend_title">猜你喜欢</text>
+<view style="margin-top:20rpx;" class="list">
+  <block wx:for="{{selectList}}" wx:key="index">
+    <view class="list_item">
+      <image src="{{item.url}}" style="width:100%"/>
+      <view class="list_detailDec">{{item.titleDec}}</view>
+      <button size="mini" class="list_detai_btn">点击了解详情-></button>
+    </view>
+  </block>
+</view>
+
+<view wx:if="{{isShowBackToTop}}">
+  <m_back-top/>
+</view>

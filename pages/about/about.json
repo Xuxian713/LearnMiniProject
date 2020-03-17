@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "我的权益",
+  "backgroundColor": "#9d20cb",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false,
+  "pageOrientation": "auto"
+
 }
